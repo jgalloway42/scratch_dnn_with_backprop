@@ -166,11 +166,11 @@ if __name__ == "__main__":
     lvTarget = np.array([[0.550],[0.580],[0.645],[0.740],[0.805]])
 
     lnMax = 1000000
-    lnErr = 1e-5
+    lnErr = 1e-4
     for i in range(lnMax+1):
         err = bpn.TrainEpoch(lvInput,lvTarget)
         if i % 1000 == 0:
-            print("Iteration {0}\t Error: {1:0.6f}".format(i,err))
+            print("\rIteration {0}\t Error: {1:0.6f}".format(i,err), end = '')
         if err <= lnErr:
             print("Minimum error reached at iteration {0}".format(i))
             break
