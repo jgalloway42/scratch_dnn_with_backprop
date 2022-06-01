@@ -1,4 +1,4 @@
-# From Scratch NN Class convereted from Python 2.7 Code
+# From Scratch NN Class converted from Python 2.7 Code
 Numpy only backprop neural net with sigmoidal, linear, gaussian and tanh activation functions.
 
 Originally written in python 2.7 at some point (2012?) then updated to python 3 in 2015 adding the demo function animating the training epochs.
